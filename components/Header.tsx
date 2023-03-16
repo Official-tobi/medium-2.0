@@ -1,9 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
+import Button from "./Button";
 
 function Header() {
   return (
-    <header className="flex justify-between p-5 max-w-7xl mx-auto">
+    <header className="flex justify-between p-5 max-w-7xl mx-auto bg-medium-yellow">
       <div className="flex items-center space-x-5">
         <Link href="/">
           <img
@@ -12,19 +13,15 @@ function Header() {
             alt="Medium2.0 Brand Logo"
           />
         </Link>
-        <div className="hidden md:inline-flex items-center space-x-5">
-          <h3>About</h3>
-          <h3>Contact</h3>
-          <h3 className="text-white bg-green-600 px-4 py-1 rounded-full">
-            Follow
-          </h3>
-        </div>
       </div>
-      <div className="flex items-center space-x-5 text-green-600">
+      <div className="flex items-center space-x-5 text-medium-black">
+        <div className="hidden md:inline-flex items-center space-x-5">
+          <h3>Our story</h3>
+          <h3>Membership</h3>
+          <h3>Write</h3>
+        </div>
         <h3>Sign In</h3>
-        <h3 className="border px-4 py-1 rounded-full border-green-600">
-          Get Started
-        </h3>
+        <Button />
       </div>
     </header>
   );
