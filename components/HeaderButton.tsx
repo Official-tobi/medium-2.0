@@ -4,7 +4,7 @@ interface specs {
 
 const Button = ({ desc }: specs) => {
   return (
-    <button className=" font-bold px-12 py-3.5 bg-black text-white rounded-full">
+    <button className="px-4 py-2 bg-black text-white rounded-full">
       {desc}
     </button>
   );

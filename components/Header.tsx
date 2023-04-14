@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import Button from "./Button";
+import HeaderButton from "./HeaderButton";
 
 function Header() {
   return (
@@ -21,7 +22,7 @@ function Header() {
           <h3>Write</h3>
         </div>
         <h3>Sign In</h3>
-        <Button />
+        <HeaderButton desc="Get started" />
       </div>
     </header>
   );

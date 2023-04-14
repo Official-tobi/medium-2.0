@@ -8,7 +8,7 @@ const Home: NextPage = () => (
   <div className="">
     <Head>
       <title>Medium - Where good ideas find you.</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.jpg" />
     </Head>
     <div className="bg-medium-yellow">
       <Header />
@@ -20,7 +20,7 @@ const Home: NextPage = () => (
           <h2 className="font-sans text-medium-grey font-semibold text-2xl max-w-lg">
             Discover stories, thinking, and expertise from writers on any topic.
           </h2>
-          <Button px={12} py={4} value="Start reading" />
+          <Button desc="Start reading" />
         </div>
 
         <img
@@ -30,6 +30,7 @@ const Home: NextPage = () => (
         />
       </div>
     </div>
+    {/* POSTS */}
   </div>
 );
 
